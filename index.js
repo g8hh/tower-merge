@@ -2967,7 +2967,7 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,167,48);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	// Слой_1
-	this.cost = new cjs.Text("100 GB", "bold 15px 'Arial'");
+	this.cost = new cjs.Text("100 金块", "bold 15px 'Arial'");
 	this.cost.name = "cost";
 	this.cost.textAlign = "center";
 	this.cost.lineHeight = 19;
@@ -3278,7 +3278,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 	this.inner.name = "inner";
 	this.inner.setTransform(361.95,420.2,0.8922,0.8922,0,0,0,331.9,226.9);
 
-	this.GBAT = new cjs.Text("Alltime GB: 1,024", "bold 7px 'Arial'", "#FFFF99");
+	this.GBAT = new cjs.Text("有史以来 金块: 1,024", "bold 7px 'Arial'", "#FFFF99");
 	this.GBAT.name = "GBAT";
 	this.GBAT.textAlign = "center";
 	this.GBAT.lineHeight = 10;
@@ -3286,7 +3286,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 	this.GBAT.parent = this;
 	this.GBAT.setTransform(354.2726,179.35,2.6003,2.6003);
 
-	this.helpGB = new cjs.Text("1 总 GB -> +1% income", "bold 7px 'Arial'", "#FFFF99");
+	this.helpGB = new cjs.Text("1 总 金块 -> +1% income", "bold 7px 'Arial'", "#FFFF99");
 	this.helpGB.name = "helpGB";
 	this.helpGB.textAlign = "center";
 	this.helpGB.lineHeight = 10;
@@ -3302,7 +3302,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 	this.gbAP.parent = this;
 	this.gbAP.setTransform(354.6726,72.7,2.6003,2.6003);
 
-	this.gbNow = new cjs.Text("你有 0 金色块", "bold 7px 'Arial'", "#FFFF99");
+	this.gbNow = new cjs.Text("你有 0 金块", "bold 7px 'Arial'", "#FFFF99");
 	this.gbNow.name = "gbNow";
 	this.gbNow.textAlign = "center";
 	this.gbNow.lineHeight = 10;
@@ -5638,9 +5638,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			goldGain = goldGain.times(emMult2).times(sapMult2);
 			
 			
-			this.goldenW.gbNow.text = "你有 " + format(gold.floor()) + " 金色块";
+			this.goldenW.gbNow.text = "你有 " + format(gold.floor()) + " 金块";
 			this.goldenW.gbAP.text = "你会获得 " + format(goldGain.floor()) + " 在声望后";
-			this.goldenW.GBAT.text = "总计 GB: " + format(totalGold.floor()) + " (x" + format(nd(1).plus(totalGold.div(100).times(gupgrades[3].level+1))) + ")";
+			this.goldenW.GBAT.text = "总计金块: " + format(totalGold.floor()) + " (x" + format(nd(1).plus(totalGold.div(100).times(gupgrades[3].level+1))) + ")";
 			
 			
 			//golden upgrades
@@ -5660,7 +5660,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu1.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu1.cost.text = "成本: " + format(gupgrades[0].allCost) + " GB";
+				this.goldenW.inner.gu.gu1.cost.text = "成本: " + format(gupgrades[0].allCost) + " 金块";
 			}
 			
 			this.goldenW.inner.gu.gu1.isAvaible.gotoAndStop(1);
@@ -5674,7 +5674,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu2.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu2.cost.text = "成本: " + format(gupgrades[1].allCost) + " GB";
+				this.goldenW.inner.gu.gu2.cost.text = "成本: " + format(gupgrades[1].allCost) + " 金块";
 			}
 			
 			if (gupgrades[0].level > 0) {
@@ -5693,7 +5693,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu3.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu3.cost.text = "成本: " + format(gupgrades[2].allCost) + " GB";
+				this.goldenW.inner.gu.gu3.cost.text = "成本: " + format(gupgrades[2].allCost) + " 金块";
 			}
 			
 			if (gupgrades[1].level > 0) {
@@ -5705,14 +5705,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			
 			
 			
-			this.goldenW.inner.gu.gu4.namee.text = "乘数 每 GB +1%";
+			this.goldenW.inner.gu.gu4.namee.text = "乘数 每 金块 +1%";
 			this.goldenW.inner.gu.gu4.amo.text = Math.round(gupgrades[3].level) + " / " + Math.round(gupgrades[3].maxLevel) + " (+1)";
 			
 			if (gupgrades[3].level >= gupgrades[3].maxLevel) {
 				this.goldenW.inner.gu.gu4.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu4.cost.text = "成本: " + format(gupgrades[3].allCost) + " GB";
+				this.goldenW.inner.gu.gu4.cost.text = "成本: " + format(gupgrades[3].allCost) + " 金块";
 			}
 			
 			if (gupgrades[1].level > 0) {
@@ -5731,7 +5731,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu5.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu5.cost.text = "成本: " + format(gupgrades[4].allCost) + " GB";
+				this.goldenW.inner.gu.gu5.cost.text = "成本: " + format(gupgrades[4].allCost) + " 金块";
 			}
 			
 			if (gupgrades[2].level > 0 && gupgrades[3].level > 0) {
@@ -5750,7 +5750,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu6.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu6.cost.text = "成本: " + format(gupgrades[5].allCost) + " GB";
+				this.goldenW.inner.gu.gu6.cost.text = "成本: " + format(gupgrades[5].allCost) + " 金块";
 			}
 			
 			if (gupgrades[4].level > 0) {
@@ -5769,7 +5769,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu7.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu7.cost.text = "成本: " + format(gupgrades[6].allCost) + " GB";
+				this.goldenW.inner.gu.gu7.cost.text = "成本: " + format(gupgrades[6].allCost) + " 金块";
 			}
 			
 			if (gupgrades[4].level > 0) {
@@ -5781,14 +5781,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			
 			
 			
-			this.goldenW.inner.gu.gu8.namee.text = "金色块增益 +50%";
+			this.goldenW.inner.gu.gu8.namee.text = "金块增益 +50%";
 			this.goldenW.inner.gu.gu8.amo.text = Math.round(gupgrades[7].level) + " / " + Math.round(gupgrades[7].maxLevel) + " (+1)";
 			
 			if (gupgrades[7].level >= gupgrades[7].maxLevel) {
 				this.goldenW.inner.gu.gu8.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu8.cost.text = "成本: " + format(gupgrades[7].allCost) + " GB";
+				this.goldenW.inner.gu.gu8.cost.text = "成本: " + format(gupgrades[7].allCost) + " 金块";
 			}
 			
 			if (gupgrades[4].level > 0) {
@@ -5800,14 +5800,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			
 			
 			
-			this.goldenW.inner.gu.gu9.namee.text = "+GB 基于等级 (x" + format(nd(1).plus(nd(level).times(0.05))) + ")";
+			this.goldenW.inner.gu.gu9.namee.text = "+金块 基于等级 (x" + format(nd(1).plus(nd(level).times(0.05))) + ")";
 			this.goldenW.inner.gu.gu9.amo.text = Math.round(gupgrades[8].level) + " / " + Math.round(gupgrades[8].maxLevel) + " (+1)";
 			
 			if (gupgrades[8].level >= gupgrades[8].maxLevel) {
 				this.goldenW.inner.gu.gu9.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu9.cost.text = "成本: " + format(gupgrades[8].allCost) + " GB";
+				this.goldenW.inner.gu.gu9.cost.text = "成本: " + format(gupgrades[8].allCost) + " 金块";
 			}
 			
 			if (gupgrades[5].level > 0) {
@@ -5820,14 +5820,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			
 			
 			
-			this.goldenW.inner.gu.gu10.namee.text = "+GB 基于 t.Mg. (x" + format(nd(1).plus(totalMagnets.times(0.005))) + ")";
+			this.goldenW.inner.gu.gu10.namee.text = "+金块 基于 t.Mg. (x" + format(nd(1).plus(totalMagnets.times(0.005))) + ")";
 			this.goldenW.inner.gu.gu10.amo.text = Math.round(gupgrades[9].level) + " / " + Math.round(gupgrades[9].maxLevel) + " (+1)";
 			
 			if (gupgrades[9].level >= gupgrades[9].maxLevel) {
 				this.goldenW.inner.gu.gu10.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu10.cost.text = "成本: " + format(gupgrades[9].allCost) + " GB";
+				this.goldenW.inner.gu.gu10.cost.text = "成本: " + format(gupgrades[9].allCost) + " 金块";
 			}
 			
 			if (gupgrades[6].level > 0) {
@@ -5846,7 +5846,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu11.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu11.cost.text = "成本: " + format(gupgrades[10].allCost) + " GB";
+				this.goldenW.inner.gu.gu11.cost.text = "成本: " + format(gupgrades[10].allCost) + " 金块";
 			}
 			
 			if (gupgrades[7].level > 0) {
@@ -5864,7 +5864,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu12.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu12.cost.text = "成本: " + format(gupgrades[11].allCost) + " GB";
+				this.goldenW.inner.gu.gu12.cost.text = "成本: " + format(gupgrades[11].allCost) + " 金块";
 			}
 			
 			if (gupgrades[8].level > 0 && gupgrades[10].level > 0) {
@@ -5882,7 +5882,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu13.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu13.cost.text = "成本: " + format(gupgrades[12].allCost) + " GB";
+				this.goldenW.inner.gu.gu13.cost.text = "成本: " + format(gupgrades[12].allCost) + " 金块";
 			}
 			
 			if (gupgrades[9].level > 0 && gupgrades[10].level > 0) {
@@ -5893,10 +5893,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			}
 			
 			if (firstBlock != null) {
-				this.goldenW.inner.gu.gu14.namee.text = "GB 增益乘数基于最高段位: x" + format(nd(firstBlock.level/10 + 1));
+				this.goldenW.inner.gu.gu14.namee.text = "金块 增益乘数基于最高段位: x" + format(nd(firstBlock.level/10 + 1));
 			}
 			else {
-				this.goldenW.inner.gu.gu14.namee.text = "GB 增益乘数基于最高段位: x1";
+				this.goldenW.inner.gu.gu14.namee.text = "金块 增益乘数基于最高段位: x1";
 			}
 			this.goldenW.inner.gu.gu14.amo.text = Math.round(gupgrades[13].level) + " / " + Math.round(gupgrades[13].maxLevel) + " (+1)";
 			
@@ -5904,7 +5904,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu14.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu14.cost.text = "成本: " + format(gupgrades[13].allCost) + " GB";
+				this.goldenW.inner.gu.gu14.cost.text = "成本: " + format(gupgrades[13].allCost) + " 金块";
 			}
 			
 			if (gupgrades[11].level > 0) {
@@ -5922,7 +5922,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu15.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu15.cost.text = "成本: " + format(gupgrades[14].allCost) + " GB";
+				this.goldenW.inner.gu.gu15.cost.text = "成本: " + format(gupgrades[14].allCost) + " 金块";
 			}
 			
 			if (gupgrades[12].level > 0) {
@@ -5940,7 +5940,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu16.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu16.cost.text = "成本: " + format(gupgrades[15].allCost) + " GB";
+				this.goldenW.inner.gu.gu16.cost.text = "成本: " + format(gupgrades[15].allCost) + " 金块";
 			}
 			
 			if (gupgrades[13].level > 0) {
@@ -5958,7 +5958,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu17.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu17.cost.text = "成本: " + format(gupgrades[16].allCost) + " GB";
+				this.goldenW.inner.gu.gu17.cost.text = "成本: " + format(gupgrades[16].allCost) + " 金块";
 			}
 			
 			if (gupgrades[14].level > 0) {
@@ -5976,7 +5976,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu18.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu18.cost.text = "成本: " + format(gupgrades[17].allCost) + " GB";
+				this.goldenW.inner.gu.gu18.cost.text = "成本: " + format(gupgrades[17].allCost) + " 金块";
 			}
 			
 			if (gupgrades[15].level > 0 && gupgrades[16].level > 0) {
@@ -5994,7 +5994,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu19.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu19.cost.text = "成本: " + format(gupgrades[18].allCost) + " GB";
+				this.goldenW.inner.gu.gu19.cost.text = "成本: " + format(gupgrades[18].allCost) + " 金块";
 			}
 			
 			if (gupgrades[17].level > 0) {
@@ -6012,7 +6012,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu20.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu20.cost.text = "成本: " + format(gupgrades[19].allCost) + " GB";
+				this.goldenW.inner.gu.gu20.cost.text = "成本: " + format(gupgrades[19].allCost) + " 金块";
 			}
 			
 			if (gupgrades[17].level > 0) {
@@ -6059,7 +6059,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			}
 			
 			
-			this.goldenW.inner.gu.gu23.namee.text = "翡翠增加 GB 增益: x" + format(emMult2_s);
+			this.goldenW.inner.gu.gu23.namee.text = "翡翠增加 金块 增益: x" + format(emMult2_s);
 			this.goldenW.inner.gu.gu23.amo.text = Math.round(gupgrades[22].level) + " / " + Math.round(gupgrades[22].maxLevel) + " (+1)";
 			
 			if (gupgrades[22].level >= gupgrades[22].maxLevel) {
@@ -6077,7 +6077,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			}
 			
 			
-			this.goldenW.inner.gu.gu24.namee.text = "蓝宝石提高 GB 增益: x" + format(sapMult2_s);
+			this.goldenW.inner.gu.gu24.namee.text = "蓝宝石提高 金块 增益: x" + format(sapMult2_s);
 			this.goldenW.inner.gu.gu24.amo.text = Math.round(gupgrades[23].level) + " / " + Math.round(gupgrades[23].maxLevel) + " (+1)";
 			
 			if (gupgrades[23].level >= gupgrades[23].maxLevel) {
@@ -6113,7 +6113,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			}
 			
 			
-			this.goldenW.inner.gu.gu26.namee.text = "GB 提升蓝宝石增益: x" + format(nd(GBToSap_s));
+			this.goldenW.inner.gu.gu26.namee.text = "金块 提升蓝宝石增益: x" + format(nd(GBToSap_s));
 			this.goldenW.inner.gu.gu26.amo.text = Math.round(gupgrades[25].level) + " / " + Math.round(gupgrades[25].maxLevel) + " (+1)";
 			
 			if (gupgrades[25].level >= gupgrades[25].maxLevel) {
@@ -6174,7 +6174,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu29.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu29.cost.text = "成本: " + format(gupgrades[28].allCost) + " GB";
+				this.goldenW.inner.gu.gu29.cost.text = "成本: " + format(gupgrades[28].allCost) + " 金块";
 			}
 			
 			if (gupgrades[26].level > 0 && gupgrades[27].level > 0) {
@@ -6192,7 +6192,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu30.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu30.cost.text = "成本: " + format(gupgrades[29].allCost) + " GB";
+				this.goldenW.inner.gu.gu30.cost.text = "成本: " + format(gupgrades[29].allCost) + " 金块";
 			}
 			
 			if (gupgrades[28].level > 0) {
@@ -6210,7 +6210,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu31.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu31.cost.text = "成本: " + format(gupgrades[30].allCost) + " GB";
+				this.goldenW.inner.gu.gu31.cost.text = "成本: " + format(gupgrades[30].allCost) + " 金块";
 			}
 			
 			if (gupgrades[29].level > 0) {
@@ -6228,7 +6228,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.goldenW.inner.gu.gu32.cost.text = "最大等级！";
 			}
 			else {
-				this.goldenW.inner.gu.gu32.cost.text = "成本: " + format(gupgrades[31].allCost) + " GB";
+				this.goldenW.inner.gu.gu32.cost.text = "成本: " + format(gupgrades[31].allCost) + " 金块";
 			}
 			
 			if (gupgrades[30].level > 0) {
@@ -6324,7 +6324,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			
 		
 			
-			this.goldenW.helpGB.text = "1 总 GB -> +" + Math.round(gupgrades[3].level+1) + "% 收入";
+			this.goldenW.helpGB.text = "1 总 金块 -> +" + Math.round(gupgrades[3].level+1) + "% 收入";
 			
 		}
 		
@@ -8298,7 +8298,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 	this.tutShow.setTransform(1261.7,17.9,1,1,0,0,0,15.3,15.3);
 	new cjs.ButtonHelper(this.tutShow, 0, 1, 2);
 
-	this.gameMade = new cjs.Text("游戏作者 denisolenison.\nInspired by ducdat0507's TPT mod.", "bold 12px 'Arial'");
+	this.gameMade = new cjs.Text("游戏作者 denisolenison.\n灵感来自 ducdat0507 的 TPT mod.", "bold 12px 'Arial'");
 	this.gameMade.name = "gameMade";
 	this.gameMade.textAlign = "center";
 	this.gameMade.lineHeight = 16;
