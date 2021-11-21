@@ -1792,7 +1792,7 @@ p.nominalBounds = new cjs.Rectangle(-28.7,-28.7,58,58);
 	this.sp5.parent = this;
 	this.sp5.setTransform(6.35,89.5);
 
-	this.sp4 = new cjs.Text("批量塔: x100,000", "bold 15px 'Arial'");
+	this.sp4 = new cjs.Text("乘数塔: x100,000", "bold 15px 'Arial'");
 	this.sp4.name = "sp4";
 	this.sp4.lineHeight = 19;
 	this.sp4.lineWidth = 193;
@@ -1813,7 +1813,7 @@ p.nominalBounds = new cjs.Rectangle(-28.7,-28.7,58,58);
 	this.sp2.parent = this;
 	this.sp2.setTransform(6.35,27.1);
 
-	this.sp1 = new cjs.Text("批量塔: x100,000", "bold 15px 'Arial'");
+	this.sp1 = new cjs.Text("乘数塔: x100,000", "bold 15px 'Arial'");
 	this.sp1.name = "sp1";
 	this.sp1.lineHeight = 19;
 	this.sp1.lineWidth = 193;
@@ -4497,7 +4497,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			
 			this.eps.text = "/秒: " + Math.round(eps*100)/100;
 			this.sps.text = "/秒: " + Math.round(sps*100)/100;
-			this.mch.text = "ch.: " + Math.round(mChance*10000)/100 + "%";
+			this.mch.text = "几率: " + Math.round(mChance*10000)/100 + "%";
 			
 			this.maxH.text = "最大高度: " + Math.round(maxH);
 			
@@ -4869,7 +4869,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.sp1.text = "???";
 			}
 			else {
-				this.sp1.text = "批量";	
+				this.sp1.text = "乘数";	
 			}
 			
 			
@@ -8459,7 +8459,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 	this.spec.setTransform(897.15,98.45,1,1,0,0,0,43.9,21.4);
 	new cjs.ButtonHelper(this.spec, 0, 1, 2);
 
-	this.mch = new cjs.Text("ch.: 99.99%", "bold 10px 'Arial'");
+	this.mch = new cjs.Text("几率: 99.99%", "bold 10px 'Arial'");
 	this.mch.name = "mch";
 	this.mch.lineHeight = 13;
 	this.mch.lineWidth = 59;
