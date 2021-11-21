@@ -5301,7 +5301,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 				this.sp6.text = "???";
 			}
 			else {
-				this.sp6.text = "名称";	
+				this.sp6.text = "翡翠";	
 			}
 			
 			
@@ -6023,7 +6023,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			}
 			
 			
-			this.goldenW.inner.gu.gu21.namee.text = "Emeralds boost $ gain: x" + format(emMult_s);
+			this.goldenW.inner.gu.gu21.namee.text = "翡翠提升t $ 增益: x" + format(emMult_s);
 			this.goldenW.inner.gu.gu21.amo.text = Math.round(gupgrades[20].level) + " / " + Math.round(gupgrades[20].maxLevel) + " (+1)";
 			
 			if (gupgrades[20].level >= gupgrades[20].maxLevel) {
@@ -6131,7 +6131,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			}
 			
 			
-			this.goldenW.inner.gu.gu27.namee.text = "Unlocks Emerald Tower";
+			this.goldenW.inner.gu.gu27.namee.text = "解锁翡翠塔";
 			this.goldenW.inner.gu.gu27.amo.text = Math.round(gupgrades[24].level) + " / " + Math.round(gupgrades[24].maxLevel) + " (+1)";
 			
 			if (gupgrades[26].level >= gupgrades[26].maxLevel) {
@@ -6149,7 +6149,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			}
 			
 			
-			this.goldenW.inner.gu.gu28.namee.text = "Unlocks Sapphire Tower";
+			this.goldenW.inner.gu.gu28.namee.text = "解锁蓝宝石塔";
 			this.goldenW.inner.gu.gu28.amo.text = Math.round(gupgrades[27].level) + " / " + Math.round(gupgrades[27].maxLevel) + " (+1)";
 			
 			if (gupgrades[27].level >= gupgrades[27].maxLevel) {
@@ -6167,7 +6167,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			}
 			
 			
-			this.goldenW.inner.gu.gu29.namee.text = "Special Chance = 1%";
+			this.goldenW.inner.gu.gu29.namee.text = "特殊几率 = 1%";
 			this.goldenW.inner.gu.gu29.amo.text = Math.round(gupgrades[28].level) + " / " + Math.round(gupgrades[28].maxLevel) + " (+1)";
 			
 			if (gupgrades[28].level >= gupgrades[28].maxLevel) {
@@ -6185,7 +6185,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			}
 			
 			
-			this.goldenW.inner.gu.gu30.namee.text = "Unlocks Recursion Tower";
+			this.goldenW.inner.gu.gu30.namee.text = "解锁递归塔";
 			this.goldenW.inner.gu.gu30.amo.text = Math.round(gupgrades[29].level) + " / " + Math.round(gupgrades[29].maxLevel) + " (+1)";
 			
 			if (gupgrades[29].level >= gupgrades[29].maxLevel) {
@@ -6203,7 +6203,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			}
 			
 			
-			this.goldenW.inner.gu.gu31.namee.text = "+1 max spawn speed upgrade";
+			this.goldenW.inner.gu.gu31.namee.text = "+1 最大产生速度升级";
 			this.goldenW.inner.gu.gu31.amo.text = Math.round(gupgrades[30].level) + " / " + Math.round(gupgrades[30].maxLevel) + " (+1)";
 			
 			if (gupgrades[30].level >= gupgrades[30].maxLevel) {
@@ -6221,7 +6221,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			}
 			
 			
-			this.goldenW.inner.gu.gu32.namee.text = "x5 falling speed";
+			this.goldenW.inner.gu.gu32.namee.text = "x5 下降速度";
 			this.goldenW.inner.gu.gu32.amo.text = Math.round(gupgrades[31].level) + " / " + Math.round(gupgrades[31].maxLevel) + " (+1)";
 			
 			if (gupgrades[31].level >= gupgrades[31].maxLevel) {
@@ -6244,61 +6244,61 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			
 			if (mLength2 < 1) {
 				this.spChances.chance1.text = "???: " + Math.round(schances[0]*10000)/100 + "%";
-				this.specialStats.sp1.text = "??? Tower: x1";
+				this.specialStats.sp1.text = "??? 塔: x1";
 			}
 			else {
-				this.spChances.chance1.text = "Mult: " + Math.round(schances[0]*10000)/100 + "%";
-				this.specialStats.sp1.text = "Mult Tower: x" + format(totalMult);
+				this.spChances.chance1.text = "乘数: " + Math.round(schances[0]*10000)/100 + "%";
+				this.specialStats.sp1.text = "乘数塔: x" + format(totalMult);
 			}
 			
 			if (mLength3 < 1) {
 				this.spChances.chance2.text = "???: " + Math.round(schances[1]*10000)/100 + "%";
-				this.specialStats.sp2.text = "??? Tower: x1";
+				this.specialStats.sp2.text = "??? 塔: x1";
 			}
 			else {
-				this.spChances.chance2.text = "Gold: " + Math.round(schances[1]*10000)/100 + "%";
-				this.specialStats.sp2.text = "Gold Tower: x" + format(goldenMult);
+				this.spChances.chance2.text = "黄金: " + Math.round(schances[1]*10000)/100 + "%";
+				this.specialStats.sp2.text = "黄金塔: x" + format(goldenMult);
 			}
 			
 			if (mLength4 < 1) {
 				this.spChances.chance3.text = "???: " + Math.round(schances[2]*10000)/100 + "%";
-				this.specialStats.sp3.text = "??? Tower: x1";
+				this.specialStats.sp3.text = "??? 塔: x1";
 			}
 			else {
-				this.spChances.chance3.text = "Lvl: " + Math.round(schances[2]*10000)/100 + "%";
-				this.specialStats.sp3.text = "Lvl Tower: x" + format(lBlockMult);
+				this.spChances.chance3.text = "等级: " + Math.round(schances[2]*10000)/100 + "%";
+				this.specialStats.sp3.text = "等级塔: x" + format(lBlockMult);
 			}
 			
 			if (mLength5 < 1) {
 				this.spChances.chance4.text = "???: " + Math.round(schances[3]*10000)/100 + "%";
-				this.specialStats.sp4.text = "??? Tower: x1";
+				this.specialStats.sp4.text = "??? 塔: x1";
 			}
 			else {
-				this.spChances.chance4.text = "Magnet: " + Math.round(schances[3]*10000)/100 + "%";
-				this.specialStats.sp4.text = "Magnet Tower: x" + format(mBlockMult);
+				this.spChances.chance4.text = "磁铁: " + Math.round(schances[3]*10000)/100 + "%";
+				this.specialStats.sp4.text = "磁铁塔: x" + format(mBlockMult);
 			}
 			
 			if (mLength6 < 1) {
 				this.spChances.chance5.text = "???: " + Math.round(schances[4]*10000)/100 + "%";
-				this.specialStats.sp5.text = "??? Tower: x1";
+				this.specialStats.sp5.text = "??? 塔: x1";
 			}
 			else {
-				this.spChances.chance5.text = "Rank: " + Math.round(schances[4]*10000)/100 + "%";
-				this.specialStats.sp5.text = "Rank Tower: x" + format(rBlockMult);
+				this.spChances.chance5.text = "段位: " + Math.round(schances[4]*10000)/100 + "%";
+				this.specialStats.sp5.text = "段位塔: x" + format(rBlockMult);
 			}
 			
 			if (mLength7 < 1) {
 				this.spChances.chance6.text = "???: " + Math.round(schances[5]*10000)/100 + "%";
-				this.specialStats.sp6.text = "??? Tower: x1";
+				this.specialStats.sp6.text = "??? 塔: x1";
 			}
 			else {
-				this.spChances.chance6.text = "Emerald: " + Math.round(schances[5]*10000)/100 + "%";
-				this.specialStats.sp6.text = "Emerald Tower: x" + format(eBlockMult);
+				this.spChances.chance6.text = "翡翠: " + Math.round(schances[5]*10000)/100 + "%";
+				this.specialStats.sp6.text = "翡翠塔: x" + format(eBlockMult);
 			}
 			
 			if (mLength8 < 1) {
 				this.spChances.chance7.text = "???: " + Math.round(schances[6]*10000)/100 + "%";
-				this.specialStats.sp7.text = "??? Tower: x1";
+				this.specialStats.sp7.text = "??? 塔: x1";
 			}
 			else {
 				this.spChances.chance7.text = "蓝宝石: " + Math.round(schances[6]*10000)/100 + "%";
@@ -6307,7 +6307,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			
 			if (mLength9 < 1) {
 				this.spChances.chance8.text = "???: " + Math.round(schances[7]*10000)/100 + "%";
-				this.specialStats.sp8.text = "??? Tower: x1";
+				this.specialStats.sp8.text = "??? 塔: x1";
 			}
 			else {
 				this.spChances.chance8.text = "递归: " + Math.round(schances[7]*10000)/100 + "%";
@@ -6324,7 +6324,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			
 		
 			
-			this.goldenW.helpGB.text = "1 总 GB -> +" + Math.round(gupgrades[3].level+1) + "% income";
+			this.goldenW.helpGB.text = "1 总 GB -> +" + Math.round(gupgrades[3].level+1) + "% 收入";
 			
 		}
 		
@@ -8006,7 +8006,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,152.3,60.2);
 			this.buy1.amo.text = "1";
 			this.buy10.amo.text = "10";
 			this.buy100.amo.text = "100";
-			this.buymax.amo.text = "MAX";
+			this.buymax.amo.text = "最大";
 			
 			if (buyAmo == 1) {
 				this.buy1.gotoAndStop(1);
